@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 使用layer-list可以将多个drawable按照顺序层叠在一起显示-->
+    <item >
+        <shape android:shape="oval"> <!-- 形状定义为椭圆-->
+            <solid android:color="#aaff7000"/>  <!-- 填充颜色-->
+            <size
+                android:width="16dp"
+                android:height="16dp"/>   <!-- 大小-->
+        </shape>
+    </item>
+    <item
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF7000"/>
+            <size
+                android:width="8dp"
+                android:height="8dp"/>
+        </shape>
+    </item>
+</layer-list>

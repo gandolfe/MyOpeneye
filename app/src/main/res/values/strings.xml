@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">开眼短视频</string>
+
+    <string name="splash_title">打开你的眼界</string>
+    <string name="splash_bottom">每天推荐优质的短视频，领略生活的美</string>
+
+    <string name="day_select">每日精选</string>
+    <string name="find_more">发现更多</string>
+    <string name="hot_top">热门排行</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

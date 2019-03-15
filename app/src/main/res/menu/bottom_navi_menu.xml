@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/day_select"
+            android:title="@string/day_select"/>
+        <item android:id="@+id/find_more"
+            android:title="@string/find_more"/>
+        <item android:id="@+id/hot_top"
+            android:title="@string/hot_top"/>
+    </group>
+
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="yys.com.myopeneye.view.activity.PlayActivity">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/mytoolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/gray02"-->
+        <!--app:title=""-->
+        <!--app:subtitle=""-->
+        <!--&gt;-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/find_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/ic_action_back"/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <com.yys.playercore.NiceVideoPlayer
+        android:id="@+id/nicevideoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nicevideoplayer">
+
+        <ImageView
+            android:id="@+id/play_bgimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/categary_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/descript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categary_time"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
