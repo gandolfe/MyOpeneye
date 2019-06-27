@@ -95,13 +95,13 @@ public class DailyFragment extends Fragment implements DailyContract.View{
     }
 
     @Override
-    public void updateData(List<ItemListEntity> data) {
+    public void updateData(int lastsize,List<ItemListEntity> data) {
         if (mDailyAdapter == null){
             mDailyAdapter = new DailyAdapter(context,data);
             mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
             mRecyclerView.setAdapter(mDailyAdapter);
         }else{
-            mDailyAdapter.notifyDataSetChanged();
+            mDailyAdapter.notifyItemInserted(lastsize);
         }
 
         noDataTextView.setVisibility(View.GONE);

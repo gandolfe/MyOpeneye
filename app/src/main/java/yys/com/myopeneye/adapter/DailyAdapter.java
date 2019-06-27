@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import yys.com.myopeneye.R;
@@ -28,7 +29,7 @@ import yys.com.myopeneye.view.activity.PlayActivity;
 public class DailyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     private Context context;
-    private List<ItemListEntity> datas;
+    private List<ItemListEntity> datas = new ArrayList<ItemListEntity>();
     private LayoutInflater inflater;
 
     private static final int BANNER = 1;

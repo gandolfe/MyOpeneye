@@ -13,7 +13,7 @@ public class DailyContract {
     public interface View{
         public void setPresenter(Presenter presenter);
 
-        public void updateData(List<ItemListEntity> data);
+        public void updateData(int lastsize,List<ItemListEntity> data);
 
         public void onError();
 

@@ -81,6 +81,7 @@ public class DailyPresenter implements DailyContract.Presenter {
                 return;
             }
             nextPageUrl = mDailyEntity.getNextPageUrl();
+            final int lastsize = mItemEntityList.size();
             if(mDailyEntity.getIssueList()!=null && mDailyEntity.getIssueList().size()>=1){
                 mItemEntityList.addAll(mDailyEntity.getIssueList().get(0).getItemList());
             }
@@ -89,7 +90,7 @@ public class DailyPresenter implements DailyContract.Presenter {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    view.updateData(mItemEntityList);
+                    view.updateData(lastsize,mItemEntityList);
                     view.setLodingIndicator(false);
                 }
             });

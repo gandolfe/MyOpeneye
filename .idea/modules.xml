@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Openeye.iml" filepath="$PROJECT_DIR$/Openeye.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyOpeneye.iml" filepath="$PROJECT_DIR$/MyOpeneye.iml" />
+      <module fileurl="file://D:\temp\MyOpeneye\MyOpeneye\Openeye.iml" filepath="D:\temp\MyOpeneye\MyOpeneye\Openeye.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/playlibrary/playlibrary.iml" filepath="$PROJECT_DIR$/playlibrary/playlibrary.iml" />
     </modules>
