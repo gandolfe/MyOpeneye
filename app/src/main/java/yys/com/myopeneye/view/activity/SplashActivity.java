@@ -69,13 +69,13 @@ public class SplashActivity extends AppCompatActivity {
     private void startAnimation(){
         View splashview = findViewById(R.id.splash_img);
 
-        ValueAnimator animator = ValueAnimator.ofObject(new FloatEvaluator(),1.0f,1.2f);
+        ValueAnimator animator = ValueAnimator.ofObject(new FloatEvaluator(),1.1f,1.3f);
         animator.setDuration(3000);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 float value = (Float)valueAnimator.getAnimatedValue();
-                if(value!=1.2f){
+                if(value!=1.3f){
                     imageView.setScaleX(value);
                     imageView.setScaleY(value);
                 }else{

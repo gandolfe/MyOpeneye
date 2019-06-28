@@ -254,6 +254,12 @@ public class MyNiceVideoPlayerController extends BaseVideoPlayerController
                 mNiceVideoPlayer.enterFullScreen();
             }
 
+        }else if(i == R.id.replay){
+            //重新播放
+            mNiceVideoPlayer.restart();
+        }else if(i == R.id.share){
+            //分享
+
         }
 
         if(view == this){

@@ -36,5 +36,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation project(':playlibrary')
-
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }

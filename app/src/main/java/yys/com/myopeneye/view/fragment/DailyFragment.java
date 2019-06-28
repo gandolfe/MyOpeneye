@@ -4,6 +4,7 @@ package yys.com.myopeneye.view.fragment;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -54,12 +55,22 @@ public class DailyFragment extends Fragment implements DailyContract.View{
         return instance;
     }
 
+    Handler handler = new Handler(){
+
+    };
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_daily, container, false);
         initView(view);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                presenter.getDailyData();
+            }
+        },200);
         return view;
     }
 
@@ -101,7 +112,12 @@ public class DailyFragment extends Fragment implements DailyContract.View{
             mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
             mRecyclerView.setAdapter(mDailyAdapter);
         }else{
-            mDailyAdapter.notifyItemInserted(lastsize);
+            if(lastsize>=1){
+                mDailyAdapter.notifyItemInserted(lastsize);
+            }else{
+                mDailyAdapter.notifyDataSetChanged();
+            }
+
         }
 
         noDataTextView.setVisibility(View.GONE);
